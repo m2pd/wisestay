@@ -1,0 +1,44 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary-red: #ed1a24;
+  // --primary-red: #dd5858;
+  --primary-blue: #0ea3cb;
+  --primary-purple: #ea3dc6;
+  --primary-yellow: #e8c753;
+
+  --gray: #737d89;
+  --dark-gray: #1d1e20;
+  --bright-gray: #c6ccd3;
+  --light-gray: #eaeef2;
+  --lighter-gray: #f5f5f7;
+
+  --bg-nav-sticky: #fff;
+  --box-shadow-color: rgba(32, 40, 49, 0.08);
+
+  --placeholder-color: #737d89;
+}
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
+body {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--dark-gray);
+  // font-family: "Montserrat", sans-serif;
+  // font-family: "Nunito Sans", sans-serif;
+  font-family: "SVN-Gilroy", sans-serif;
+  a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    &:hover {
+      text-decoration: none;
+      color: var(--primary-red);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
