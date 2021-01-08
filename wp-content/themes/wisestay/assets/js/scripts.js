@@ -71,16 +71,48 @@ var nhabe360 = (function ($) {
     });
   }
 
+  function boxTestimonial() {
+    $("#testimonialSlide").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      touchMove: true,
+      prevArrow: $('.am-prev'),
+      nextArrow: $('.am-next'),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
+
   return {
     carousel: carousel,
     addHeader: addHeader,
-    boxCarousel: boxCarousel
+    boxCarousel: boxCarousel,
+    boxTestimonial: boxTestimonial,
   };
 })(jQuery);
 jQuery(document).ready(function () {
   nhabe360.carousel();
   nhabe360.addHeader();
   nhabe360.boxCarousel();
+  nhabe360.boxTestimonial();
 
   //TOOLTIP
   $('[data-toggle="tooltip"]').tooltip();
