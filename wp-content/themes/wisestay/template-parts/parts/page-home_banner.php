@@ -296,3 +296,47 @@ if ($image && $image != '') :
         </div>
     </div>
 </section>
+
+<section class="gallery py-5">
+    <div class="gallery__data">
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=10" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=11" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=12" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=13" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=14" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=15" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=16" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=17" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=18" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=19" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=20" alt="gallery">
+        </div>
+        <div class="gallery__item">
+            <img src="https://placedog.net/400/400/?id=21" alt="gallery">
+        </div>
+    </div>
+    <a href="#" class="gallery__link">
+        #homeiswheretheheartsare
+    </a>
+</section>
