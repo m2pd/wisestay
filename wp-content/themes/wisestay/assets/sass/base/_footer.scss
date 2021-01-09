@@ -63,6 +63,54 @@
   }
 }
 
+@keyframes showSocial{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+
+@keyframes hideSocial{
+  0%{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.6) translateY(-8px);
+  }
+  
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .footer {
   &__copyright {
     padding: 10px 0px;
@@ -210,3 +258,76 @@
     }
   }
 }
+
+.social{
+
+  &-network{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+
+    animation: hideSocial 350ms forwards;
+
+    &.active-animate{
+      // animation: hideSocial 350ms ease-in-out;
+      animation-name: animateIn;
+      animation-duration: 350ms;
+      animation-delay: calc(var(--animation-order) * 100ms);
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+    }
+
+    img {
+      object-fit: cover;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: relative;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 6px rgba(49,50,51,0.1);
+      cursor: pointer;
+    }
+  }
+
+  &__description {
+    padding: 5px 15px;
+    background-color: #edc92c;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #social-main {
+    display: flex;
+    line-height: 1.2;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: auto;
+
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(49,50,51,0.1);
+    cursor: pointer;
+
+    border-radius: 50%;
+    border: 5px solid #fff;
+
+    backface-visibility: hidden;
+    background: linear-gradient(130deg, #ea3dc6, #821bfe, #9ffffe);
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+  }
+}
+
+

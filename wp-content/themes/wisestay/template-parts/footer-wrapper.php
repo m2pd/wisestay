@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <h4 class="footer-title">Về <?php echo esc_html( get_bloginfo( 'name' ) ); ?></h4>
+                    <h4 class="footer-title">Về <?php echo esc_html(get_bloginfo('name')); ?></h4>
                     <div class="footer-list">
                         <ul>
                             <li>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="social">
-                        <h4 class="footer-title line">Kết nối với <?php echo esc_html( get_bloginfo( 'name' ) ); ?></h4>
+                        <h4 class="footer-title line">Kết nối với <?php echo esc_html(get_bloginfo('name')); ?></h4>
                         <ul>
                             <li>
                                 <a href="#" title="Facebook" target="_blank">
@@ -97,7 +97,32 @@
     </div>
     <div class="footer__copyright text-left">
         <div class="container">
-            <span>2021 - Bản quyền thuộc về <?php echo esc_html( get_bloginfo( 'name' ) ); ?></span>
+            <span>2021 - Bản quyền thuộc về <?php echo esc_html(get_bloginfo('name')); ?></span>
         </div>
+    </div>
+
+    <div class="social social-network">
+        <div class="social__list">
+            <a class="social__item active-animate" style="--animation-order: 1;">
+                <span class="social__description">Nhắn tin Messenger</span>
+                <img class="social__image" src="<?php echo get_template_directory_uri() . '/assets/images/social/messenger.png' ?>" alt="image">
+            </a>
+            <a class="social__item active-animate" style="--animation-order: 2;">
+                <span class="social__description">Nhắn tin Zalo</span>
+                <img class="social__image" src="<?php echo get_template_directory_uri() . '/assets/images/social/zalo.png' ?>" alt="image">
+            </a>
+            <a class="social__item active-animate" style="--animation-order: 3;">
+                <span class="social__description">Chỉ đường bản đồ</span>
+                <img class="social__image" src="<?php echo get_template_directory_uri() . '/assets/images/social/map.png' ?>" alt="image">
+            </a>
+            <a class="social__item active-animate">
+                <span class="social__description" style="--animation-order: 4;">Để lại SĐT tư vấn</span>
+                <img class="social__image" src="<?php echo get_template_directory_uri() . '/assets/images/social/customer.png' ?>" alt="image">
+            </a>
+        </div>
+
+        <p id="social-main">
+            Liên hệ
+        </p>
     </div>
 </footer>

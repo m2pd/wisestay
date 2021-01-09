@@ -101,11 +101,18 @@ var nhabe360 = (function ($) {
     });
   }
 
+  function boxSocialNetwork() {
+    $('#social-main').click(function () {
+      $('.social__item').toggleClass('active-animate')
+    })
+  }
+
   return {
     carousel: carousel,
     addHeader: addHeader,
     boxCarousel: boxCarousel,
     boxTestimonial: boxTestimonial,
+    boxSocialNetwork: boxSocialNetwork,
   };
 })(jQuery);
 jQuery(document).ready(function () {
@@ -113,6 +120,7 @@ jQuery(document).ready(function () {
   nhabe360.addHeader();
   nhabe360.boxCarousel();
   nhabe360.boxTestimonial();
+  nhabe360.boxSocialNetwork();
 
   //TOOLTIP
   $('[data-toggle="tooltip"]').tooltip();
